@@ -1,60 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Бизнес с Китаем</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
+    * {
       margin: 0;
-      background-color: #181818;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Arial', sans-serif;
-      color: white;
+      background-color: #181818;
+      color: #fff;
     }
     header {
+      background: linear-gradient(to bottom, #000, #1c1c1c);
       text-align: center;
-      padding: 60px 20px;
+      padding: 60px 20px 40px;
     }
-    h1 {
-      font-size: 64px;
-      margin: 0;
-      background: linear-gradient(0deg, #6b6969 0%, #ffffff 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    h2 {
+    header h1 {
       font-size: 48px;
-      margin: 0;
-      background: linear-gradient(0deg, #6b6969 0%, #ffffff 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-weight: 900;
+      margin-bottom: 20px;
     }
-    .subtitle {
-      font-size: 24px;
-      margin-top: 20px;
+    header img {
+      width: 250px;
+      border-radius: 12px;
     }
-    .start-date {
-      font-size: 20px;
-      color: #ccc;
+    .cta {
+      margin: 20px 0;
     }
-    .hero-img {
-      margin: 30px auto;
-      max-width: 480px;
-      width: 100%;
-      display: block;
-    }
-    .cta-buttons {
-      margin: 40px 0;
-      text-align: center;
-    }
-    .cta-buttons a {
-      padding: 15px 25px;
+    .cta a {
+      display: inline-block;
       margin: 10px;
-      text-decoration: none;
+      padding: 15px 25px;
       font-weight: bold;
       border-radius: 8px;
-      font-size: 18px;
-      display: inline-block;
+      font-size: 16px;
+      text-decoration: none;
     }
     .btn-white {
       background-color: #fff;
@@ -64,175 +49,153 @@
       background: linear-gradient(251deg, #f52727 0%, #ff4a4a 53%, #f52727 100%);
       color: #fff;
     }
-    .section {
+    section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
-    .section h3 {
-      font-size: 32px;
+    section h2 {
+      font-size: 28px;
+      font-weight: 800;
       margin-bottom: 20px;
+      text-align: center;
     }
-    .icon-block {
+    .feature {
       display: flex;
-      align-items: center;
-      gap: 20px;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    .feature img {
+      width: 28px;
+      margin-top: 4px;
+    }
+    .feature p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    .profile {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .profile img {
+      width: 220px;
+      border-radius: 14px;
       margin: 20px 0;
     }
-    .icon-block img {
-      width: 36px;
-      height: 36px;
+    .project-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 10px;
     }
-    .icon-block p {
-      margin: 0;
-      font-size: 18px;
-    }
-    footer {
-      background-color: #101010;
-      color: #aaa;
-      text-align: center;
-      padding: 30px 10px;
-      font-size: 14px;
+    .project-list li {
+      margin-bottom: 5px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="start-date">Старт 12 мая</div>
-  <h1>БИЗНЕС</h1>
-  <h2>С КИТАЕМ</h2>
-  <div class="subtitle">ОНЛАЙН ОБУЧЕНИЕ</div>
-  <img src="https://static.tildacdn.com/tild3131-3230-4239-a631-663437663938/23_1.png" alt="Обучение" class="hero-img">
-  <p style="font-size: 20px; max-width: 600px; margin: 0 auto;">
-    Научитесь закупать товары напрямую с Китая без знания китайского языка
-  </p>
+  <h1>БИЗНЕС С КИТАЕМ</h1>
+  <p>Научитесь закупу напрямую из Китая<br>без знания китайского языка</p>
+  <img src="https://static.tildacdn.com/tild3236-6635-4632-b234-346566313431/IMG_2288_1.png" alt="Яна Билан">
+  <div class="cta">
+    <a href="#tarif" class="btn-white">УЗНАТЬ ПОДРОБНЕЕ</a>
+    <a href="#form" class="btn-red">ОСТАВИТЬ ЗАЯВКУ</a>
+  </div>
 </header>
 
-<div class="cta-buttons">
-  <a class="btn-white" href="#tarif">УЗНАТЬ ПОДРОБНЕЕ</a>
-  <a class="btn-red" href="#zayavka">ОСТАВИТЬ ЗАЯВКУ</a>
-</div>
+<section>
+  <h2>О СЕБЕ</h2>
+  <div class="feature"><img src="https://static.tildacdn.com/tild3465-3539-4465-a463-396133353034/Frame_1.svg" alt=""><p>Яна Билан — блогер, который поднял свою аудиторию с 0</p></div>
+  <div class="feature"><img src="https://static.tildacdn.com/tild3465-3539-4465-a463-396133353034/Frame_1.svg" alt=""><p>Имеет свой офлайн бизнес, магазин одежды</p></div>
+  <div class="feature"><img src="https://static.tildacdn.com/tild3465-3539-4465-a463-396133353034/Frame_1.svg" alt=""><p>10 лет опыта предпринимательства</p></div>
 
-<section class="section" id="about">
-  <h3>О себе</h3>
-  <p><strong>Яна Билан</strong></p>
-  <ul style="font-size: 18px; line-height: 1.6;">
-    <li>Я предприниматель, у меня есть несколько направлений бизнеса.</li>
-    <li>Уже более 10 лет заказываю товары из Китая для себя, а также продаю их в своём офлайн-магазине.</li>
-    <li>На курсе ты получишь мой опыт предпринимателя и мой огромный практический опыт заказов из Китая.</li>
-  </ul>
-</section>
-  
-  
-<section class="section">
-  <h3>Кому подойдёт обучение?</h3>
-
-  <div class="icon-block">
-    <img src="https://static.tildacdn.com/tild3137-3634-4961-a263-366335303938/Group_108.svg" alt="иконка">
-    <p>Ты владеешь онлайн или офлайн магазином и хочешь выйти на новый уровень</p>
-  </div>
-  <div class="icon-block">
-    <img src="https://static.tildacdn.com/tild3137-3634-4961-a263-366335303938/Group_108.svg" alt="иконка">
-    <p>У тебя есть офлайн бизнес и ты хочешь сэкономить на поставках</p>
-  </div>
-  <div class="icon-block">
-    <img src="https://static.tildacdn.com/tild3137-3634-4961-a263-366335303938/Group_108.svg" alt="иконка">
-    <p>Селлер, который продаёт на маркетплейсах Wildberries или Ozon</p>
-  </div>
-  <div class="icon-block">
-    <img src="https://static.tildacdn.com/tild3137-3634-4961-a263-366335303938/Group_108.svg" alt="иконка">
-    <p>Хочешь заказывать для себя, семьи, друзей по выгодной цене</p>
-  </div>
-  <div class="icon-block">
-    <img src="https://static.tildacdn.com/tild3137-3634-4961-a263-366335303938/Group_108.svg" alt="иконка">
-    <p>Хочешь запустить свой бизнес без огромных вложений</p>
+  <div class="profile">
+    <img src="https://static.tildacdn.com/tild3236-6635-4632-b234-346566313431/IMG_2288_1.png" alt="Яна">
+    <ul class="project-list">
+      <li>@balance_med_moscow</li>
+      <li>@balance_med_kzn</li>
+      <li>@vash_pomoshnik_kzn</li>
+      <li>@sestra___store</li>
+    </ul>
   </div>
 </section>
 
-<section class="section">
-  <h3>Чему вы научитесь на курсе?</h3>
-  <div class="icon-block">
-    <img src="https://static.tildacdn.com/tild3137-3634-4961-a263-366335303938/Group_108.svg" alt="иконка">
-    <p>Искать поставщика на платформе 1688</p>
+<section>
+  <h2>ДЛЯ КОГО ЭТОТ МАРАФОН?</h2>
+  <div class="feature"><img src="https://static.tildacdn.com/tild3465-3539-4465-a463-396133353034/Frame_1.svg"><p>Владеешь онлайн/офлайн-магазином и хочешь выйти на новый уровень</p></div>
+  <div class="feature"><img src="https://static.tildacdn.com/tild3465-3539-4465-a463-396133353034/Frame_1.svg"><p>Селлер, продающий на маркетплейсах WB/OZON</p></div>
+  <div class="feature"><img src="https://static.tildacdn.com/tild3465-3539-4465-a463-396133353034/Frame_1.svg"><p>Делаешь ремонт и хочешь сэкономить</p></div>
+  <div class="feature"><img src="https://static.tildacdn.com/tild3465-3539-4465-a463-396133353034/Frame_1.svg"><p>Хочешь расширить базу поставщиков</p></div>
+  <div class="feature"><img src="https://static.tildacdn.com/tild3465-3539-4465-a463-396133353034/Frame_1.svg"><p>Хочешь стать байером</p></div>
+</section>
+
+<section>
+  <h2>ЧЕМУ ВЫ НАУЧИТЕСЬ</h2>
+  <div class="feature"><img src="https://static.tildacdn.com/tild3465-3539-4465-a463-396133353034/Frame_1.svg"><p>Поймёте пошаговый процесс заказа товаров из Китая</p></div>
+  <div class="feature"><img src="https://static.tildacdn.com/tild3465-3539-4465-a463-396133353034/Frame_1.svg"><p>Разберётесь с Alipay, WeChat и Poizon</p></div>
+  <div class="feature"><img src="https://static.tildacdn.com/tild3465-3539-4465-a463-396133353034/Frame_1.svg"><p>Создадите аккаунты на 1688, Taobao, WeChat</p></div>
+  <div class="feature"><img src="https://static.tildacdn.com/tild3465-3539-4465-a463-396133353034/Frame_1.svg"><p>Научитесь искать, оплачивать и отслеживать заказы</p></div>
+  <div class="feature"><img src="https://static.tildacdn.com/tild3465-3539-4465-a463-396133353034/Frame_1.svg"><p>Узнаете, как выбрать поставщика на 1688</p></div>
+</section>
+<section id="tarif">
+  <h2>ПРОГРАММА И СТОИМОСТЬ</h2>
+
+  <div style="background:#fff; color:#000; padding:20px; border-radius:16px; margin:20px auto; max-width:600px;">
+    <h3 style="font-size:24px;">КИТАЙ — ЭТО ЛЕГКО.</h3>
+    <p style="color: red; font-style: italic;">Хочу заказывать для себя</p>
+    <ul>
+      <li>Оплата Alipay</li>
+      <li>Приложение WeChat</li>
+      <li>1688</li>
+      <li>TaoBao</li>
+      <li>Poizon</li>
+    </ul>
+    <h4 style="font-size:24px; margin-top:15px;"><strong>7 999 ₽</strong> <span style="color:#999; text-decoration: line-through;">9 900 ₽</span></h4>
+    <a href="#" class="btn-red" style="display:inline-block; margin-top:10px;">ОПЛАТИТЬ</a>
   </div>
-  <div class="icon-block">
-    <img src="https://static.tildacdn.com/tild3137-3634-4961-a263-366335303938/Group_108.svg" alt="иконка">
-    <p>Проверять поставщика и договариваться о скидке</p>
+
+  <div style="background:#fff; color:#000; padding:20px; border-radius:16px; margin:20px auto; max-width:600px;">
+    <h3 style="font-size:24px;">СТАНДАРТ</h3>
+    <p style="color: red; font-style: italic;">Думаю о бизнесе</p>
+    <ul>
+      <li>Всё из тарифа «Китай — это легко»</li>
+      <li>Закрытый Telegram-чат</li>
+      <li>Ответы на вопросы от куратора</li>
+    </ul>
+    <h4 style="font-size:24px; margin-top:15px;"><strong>14 900 ₽</strong></h4>
+    <a href="#" class="btn-red" style="display:inline-block; margin-top:10px;">ОПЛАТИТЬ</a>
   </div>
-  <div class="icon-block">
-    <img src="https://static.tildacdn.com/tild3137-3634-4961-a263-366335303938/Group_108.svg" alt="иконка">
-    <p>Оплачивать заказ через безопасные сервисы</p>
-  </div>
-  <div class="icon-block">
-    <img src="https://static.tildacdn.com/tild3137-3634-4961-a263-366335303938/Group_108.svg" alt="иконка">
-    <p>Работать с карго-компаниями и отслеживать поставки</p>
-  </div>
-  <div class="icon-block">
-    <img src="https://static.tildacdn.com/tild3137-3634-4961-a263-366335303938/Group_108.svg" alt="иконка">
-    <p>Понимать стоимость доставки и как на ней можно экономить</p>
+
+  <div style="background:#fff; color:#000; padding:20px; border-radius:16px; margin:20px auto; max-width:600px;">
+    <h3 style="font-size:24px;">ПРЕМИУМ</h3>
+    <p style="color: red; font-style: italic;">Ищу личную поддержку</p>
+    <ul>
+      <li>Всё из тарифа «Стандарт»</li>
+      <li>Индивидуальная сессия</li>
+      <li>Личная работа с Яной</li>
+    </ul>
+    <h4 style="font-size:24px; margin-top:15px;"><strong>29 900 ₽</strong></h4>
+    <a href="#" class="btn-red" style="display:inline-block; margin-top:10px;">ОПЛАТИТЬ</a>
   </div>
 </section>
 
-<section id="tarif" class="section">
-  <h3>Тарифы</h3>
-  <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
-    <div style="background-color:#2c2c2c; padding: 20px; border-radius: 10px; width: 280px;">
-      <h4 style="color: #f52727;">Стандарт</h4>
-      <p>✓ Доступ к обучающей платформе</p>
-      <p>✓ Чек-листы и инструкции</p>
-      <p>✓ 1 месяц доступа</p>
-      <a href="#" class="btn-white" style="margin-top:10px; display:inline-block;">ОПЛАТИТЬ</a>
-    </div>
-    <div style="background-color:#2c2c2c; padding: 20px; border-radius: 10px; width: 280px;">
-      <h4 style="color: #f52727;">VIP</h4>
-      <p>✓ Всё из тарифа Стандарт</p>
-      <p>✓ Доступ к закрытому чату</p>
-      <p>✓ 3 месяца доступа</p>
-      <a href="#" class="btn-red" style="margin-top:10px; display:inline-block;">ОПЛАТИТЬ</a>
-    </div>
-    <div style="background-color:#2c2c2c; padding: 20px; border-radius: 10px; width: 280px;">
-      <h4 style="color: #f52727;">Премиум</h4>
-      <p>✓ Всё из тарифа VIP</p>
-      <p>✓ Личная поддержка куратора</p>
-      <p>✓ 6 месяцев доступа</p>
-      <a href="#" class="btn-red" style="margin-top:10px; display:inline-block;">ОПЛАТИТЬ</a>
-    </div>
-  </div>
-</section>
-
-<section id="zayavka" class="section">
-  <h3>Оставить заявку</h3>
-  <p>Заполните форму, и мы свяжемся с вами для уточнения деталей</p>
-  <form style="max-width:400px; margin:auto; display:flex; flex-direction:column; gap:10px;">
-    <input type="text" placeholder="Ваше имя" style="padding:10px;">
-    <input type="tel" placeholder="Телефон" style="padding:10px;">
+<section id="form">
+  <h2>ОСТАВИТЬ ЗАЯВКУ</h2>
+  <p style="text-align:center; max-width:600px; margin:auto;">Заполните форму — и мы свяжемся с вами для уточнения всех деталей участия</p>
+  <form style="max-width:400px; margin:20px auto; display:flex; flex-direction:column; gap:10px;">
+    <input type="text" placeholder="Ваше имя" style="padding:10px; border-radius:6px;">
+    <input type="tel" placeholder="Телефон" style="padding:10px; border-radius:6px;">
     <button type="submit" class="btn-red" style="padding:10px; font-size:16px;">Оставить заявку</button>
   </form>
 </section>
-<section class="section">
-  <h3>Мои проекты</h3>
-  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-    <div style="background-color:#2c2c2c; padding: 15px; border-radius: 8px; width: 240px;">
-      <p><strong>Магазин одежды</strong></p>
-      <a href="https://instagram.com/shop1" style="color:#ff4a4a;">@shop1</a>
-    </div>
-    <div style="background-color:#2c2c2c; padding: 15px; border-radius: 8px; width: 240px;">
-      <p><strong>Аксессуары и товары из Китая</strong></p>
-      <a href="https://instagram.com/shop2" style="color:#ff4a4a;">@shop2</a>
-    </div>
-    <div style="background-color:#2c2c2c; padding: 15px; border-radius: 8px; width: 240px;">
-      <p><strong>Детский текстиль</strong></p>
-      <a href="https://instagram.com/shop3" style="color:#ff4a4a;">@shop3</a>
-    </div>
-  </div>
-</section>
 
-<footer>
+<footer style="padding:30px 20px; background:#101010; text-align:center; font-size:14px; color:#ccc;">
   <p>ИП Билан Я.О.</p>
   <p>ИНН: 165715582452 | ОГРНИП: 322169000150010</p>
-  <p>Политика конфиденциальности | Оферта | Написать поддержке</p>
-  <p>Разработка сайта: <a href="https://t.me/ilsafusmanov" style="color:#aaa;">@ilsafusmanov</a></p>
+  <p>Политика конфиденциальности | Оферта | Поддержка</p>
+  <p>Разработка сайта: <a href="https://t.me/ilsafusmanov" style="color:#999;">@ilsafusmanov</a></p>
   <p>© 2025</p>
 </footer>
 
